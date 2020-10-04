@@ -9,7 +9,8 @@ function vue(){
     new Vue({
         el: '#app',
         data:{
-            data:{},
+            menu:[],
+            carousel: [],
             slice: 150,
             showModal: false,
             current: 0
@@ -20,9 +21,9 @@ function vue(){
         methods:{
             getData(){
                 const self = this;
-                $.getJSON( "http://halilbilgin.com.tr/staticness/data.json", function( data ) {
-                    console.log(data["posts"]);
-                    self.data = data["posts"];
+                $.getJSON( "http://halilbilgin.com.tr/staticness/company/data.json", function( data ) {
+                    self.menu = data["menu"];
+                    self.carousel = data["carousel"];
                 });
             },
             readmore(id){
