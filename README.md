@@ -8,7 +8,7 @@ NOT GOOGLE FRIENDLY! / GOOGLE DOSTU DEĞİLDİR! <br>
 ```
 Posts
 ```
-<a href="http://halilbilgin.com.tr/staticness/blog/">Blog Demo</a>
+<b>Demo: </b><a href="http://halilbilgin.com.tr/staticness/blog/">Blog Demo</a>
 
 ## Staticness Company
 Please use static posts for SEO. / Lütfen SEO için statik yazılar kullanın.
@@ -17,4 +17,4 @@ Please use static posts for SEO. / Lütfen SEO için statik yazılar kullanın.
 Menu
 Carousel
 ```
-<a href="http://halilbilgin.com.tr/staticness/company/">Company Demo</a> <br>
+<b>Demo: </b><a href="http://halilbilgin.com.tr/staticness/company/">Company Demo</a> <br>
