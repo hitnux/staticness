@@ -25,46 +25,31 @@
         <ul class="navbar">
             <li v-for="item in menu"><a :href="item.url">{{item.name}}</a></li>
         </ul>
+        <div class="carousel">
+            <a v-for="item in carousel" :href="url"><img :src="item.img" height="250" width="250"/></a>
+        </div>
+        <div id="about">
+            <h3>About</h3>
+            <p>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </div>
+        <div id="contact">
+            <h3>Contact</h3>
+            <ul>
+                <li>Phone:000</li>
+                <li>Mail: contact@staticness.github.io</li>
+            </ul>
+        </div>
     </div>
 </div>
-
-<script type="text/x-template" id="modal">
-    <div>
-        <div class="modal-mask">
-        <div class="modal-wrapper">
-            <div class="modal-container">
-            <div class="modal-header modal-padding" style="border-bottom: solid 1px #dcdcdc;">
-                <header style="display: flex;justify-content:space-between">
-                <h3><slot name="title"></slot></h3>
-                <div>
-                    <button class="modal-default-button" style="background:none;border:none;" @click="$emit('close')">
-                    X
-                    </button>
-                </div>
-                </header>
-            </div>
-            <div class="modal-body modal-padding">
-                <slot name="body">
-                default body
-                </slot>
-            </div>
-            <div class="modal-footer modal-padding">
-                <slot name="footer">
-                default footer
-                </slot>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</script>
 
 <style>
     *{
         font-family: 'Lato', sans-serif;
-    }
-    h3, h5{
-        margin: .5rem 0;
     }
     .container{
         max-width: 780px;
@@ -73,21 +58,29 @@
         border-radius: 5px;
         padding: 1rem;
     }
-    .cards{
+    
+    .navbar{
         display: flex;
-        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
     }
-    .card{
-        border-left: solid 3px #186FC9;
+    .navbar li{
+        margin-left: 0;
+    }
+    .navbar{
+        display: flex;
+        list-style: none;
+        border:solid 1px #e1e4e8;
+    }
+    .navbar li{
+        margin-left: 0;
         padding: 1rem;
-        width: 45%;
+        border-right:solid 1px #e1e4e8;
     }
-    .card button{
-        background: #186FC9;
-        color: white;
-        font-size: 1rem;
-        border: none;
-        padding: .5rem;
+    .navbar li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: black;
     }
 </style>
 </body>
