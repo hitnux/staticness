@@ -22,6 +22,7 @@
 <div id="app">
     <div class="container">
         <h1>Staticness Tech</h1>
+        <h5>Welcome Staticness sample company site</h5>
         <ul class="navbar">
             <li v-for="item in menu"><a :href="item.url">{{item.name}}</a></li>
         </ul>
@@ -45,6 +46,9 @@
             </ul>
         </div>
     </div>
+    <footer>
+        2020 Staticness | <a href="https://github.com/hitnux/staticness" target="_blank" style="margin-left: .2rem;">View on Github</a>
+    </footer>
 </div>
 
 <style>
@@ -81,6 +85,11 @@
         text-decoration: none;
         font-size: 1.2rem;
         color: black;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        margin: .5rem 0 1rem;
     }
 </style>
 </body>
