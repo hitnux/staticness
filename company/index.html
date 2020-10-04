@@ -26,7 +26,7 @@
             <li v-for="item in menu"><a :href="item.url">{{item.name}}</a></li>
         </ul>
         <div class="carousel">
-            <a v-for="item in carousel" :href="url"><img :src="item.img" height="250" width="250"/></a>
+            <a v-for="item in carousel" :href="item.url" target="_blank"><img :src="item.img" height="250" width="250"/></a>
         </div>
         <div id="about">
             <h3>About</h3>
