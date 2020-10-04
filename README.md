@@ -3,7 +3,7 @@ Staticness, verilerini json içerisinden alan statik bir web projesidir. <br>
 Staticness is a static web project that takes its data from json.
 
 ## Staticness Blog
-NOT GOOGLE FRIENDLY / GOOGLE DOSTU DEĞİLDİR <br>
+NOT GOOGLE FRIENDLY! / GOOGLE DOSTU DEĞİLDİR! <br>
 ### Variables:
 ```
 Posts
