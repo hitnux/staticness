@@ -9,6 +9,7 @@ function vue(){
     new Vue({
         el: '#app',
         data:{
+            source:"http://halilbilgin.com.tr/staticness/blog/data.json", // JSON URL
             menu:[],
             carousel: [],
             slice: 150,
@@ -21,7 +22,7 @@ function vue(){
         methods:{
             getData(){
                 const self = this;
-                $.getJSON( "http://halilbilgin.com.tr/staticness/company/data.json", function( data ) {
+                $.getJSON( this.source, function( data ) {
                     self.menu = data["menu"];
                     self.carousel = data["carousel"];
                 });

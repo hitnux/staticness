@@ -9,8 +9,9 @@ function vue(){
     new Vue({
         el: '#app',
         data:{
+            source:"http://halilbilgin.com.tr/staticness/blog/data.json", // JSON URL
+            slice: 150, // Short description number of letters
             data:[],
-            slice: 150,
             showModal: false,
             current: 0
         },
@@ -20,8 +21,7 @@ function vue(){
         methods:{
             getData(){
                 const self = this;
-                $.getJSON( "http://halilbilgin.com.tr/staticness/blog/data.json", function( data ) {
-                    console.log(data["posts"]);
+                $.getJSON( this.source, function( data ) {
                     self.data = data["posts"];
                 });
             },
