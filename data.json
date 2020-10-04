@@ -3,7 +3,7 @@
         {
             "title":"Staticness Nedir?What is Staticness?",
             "author":"Hitnux",
-            "content":"Staticness, json içerisinden verilerin okunduğu statik bir web sitesi yapısıdır."
+            "content":"Staticness, verilerini json içerisinden alan statik bir web projesidir. Staticness is a static web project that takes its data from json."
         },
         {
             "title":"Test0",
