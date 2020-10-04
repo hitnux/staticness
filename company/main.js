@@ -11,10 +11,7 @@ function vue(){
         data:{
             source:"http://halilbilgin.com.tr/staticness/blog/data.json", // JSON URL
             menu:[],
-            carousel: [],
-            slice: 150,
-            showModal: false,
-            current: 0
+            carousel: []
         },
         created(){
             this.getData();
@@ -26,16 +23,9 @@ function vue(){
                     self.menu = data["menu"];
                     self.carousel = data["carousel"];
                 });
-            },
-            readmore(id){
-                this.current =id;
-                this.showModal= true;
             }
         }
     });
 }
 function vuecomponents(){
-    Vue.component("modal", {
-        template: '#modal',
-    });  
 }
