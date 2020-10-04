@@ -9,7 +9,7 @@ function vue(){
     new Vue({
         el: '#app',
         data:{
-            source:"http://halilbilgin.com.tr/staticness/blog/data.json", // JSON URL
+            source:"http://halilbilgin.com.tr/staticness/company/data.json", // JSON URL
             menu:[],
             carousel: []
         },
