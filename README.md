@@ -4,14 +4,15 @@ Staticness is a static web project that takes its data from json.
 
 ## Staticness Blog
 NOT GOOGLE FRIENDLY / GOOGLE DOSTU DEĞİLDİR <br>
-Variables:
+### Variables:
 ```
 Posts
 ```
 <a href="http://halilbilgin.com.tr/staticness/blog/">Blog Demo</a>
 
 ## Staticness Company
-Variables:
+Please use static posts for SEO. / Lütfen SEO için statik yazılar kullanın.
+### Variables:
 ```
 Menu
 Carousel
