@@ -1,15 +1,15 @@
 {
     "menu":[
         {
-            "name":"Staticness Github",
+            "name":"Github",
             "url": "https://github.com/hitnux/staticness"
         },
         {
-            "name":"Staticness Blog",
+            "name":"Blog",
             "url": "http://halilbilgin.com.tr/staticness/blog/"
         },
         {
-            "name":"Staticness Company",
+            "name":"Company",
             "url": "http://halilbilgin.com.tr/staticness/company"
         }
     ],

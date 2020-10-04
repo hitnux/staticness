@@ -17,9 +17,19 @@
         <h1>Staticness</h1>
         <h5>Welcome Staticness</h5>
         <p>Staticness Skeleton</p>
-        <ul>
+        <ul class="menu">
             <li v-for="item in data['menu']"><a :href="item.url" target="_blank">{{item.name}}</a></li>
         </ul>
+        <table>
+            <tr>
+                <td>Title</td>
+                <td>Content</td>
+            </tr>
+            <tr v-for="item in data['posts']">
+                <td>{{item.title}}</td>
+                <td>{{item.content}}</td>
+            </tr>
+        </table>
     </div>
     <footer>
         2020 Staticness | <a href="https://github.com/hitnux/staticness" target="_blank" style="margin-left: .2rem;">View on Github</a>
@@ -41,6 +51,39 @@
         display: flex;
         justify-content: center;
         margin: .5rem 0 1rem;
+    }
+
+    .menu{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        border: solid 1px #e1e4e8;
+        font-size: 1.2rem;
+    }
+    .menu li{
+        margin: 0;
+        padding: 1rem;
+        border-right: solid 1px #e1e4e8;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: black;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td{
+        border: 1px solid #e1e4e8;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
     }
 </style>
 </body>
